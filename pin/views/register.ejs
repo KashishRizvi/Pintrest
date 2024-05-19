@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full h-screen bg-[url('https://i.pinimg.com/736x/2c/71/f7/2c71f7fc1a57010f17beb9d1841060e1.jpg')] object-cover flex items-center justify-center">
+    <div class="gamee w-[25vw] h-[94vh]  px-20 px-7 rounded-[30px]">
+      <h1 class="text-3xl mb-10 pt-7 text-center  tracking-tighter font-semibold text-white capitalize leading-none ">Create New Account</h1>
+      <form action="/register" method="post">
+        <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="username" placeholder="username">
+        <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="name" placeholder="full Name">
+        <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="email" placeholder="email">
+        <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" numbr="contact" placeholder="contact">
+        <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="password" name="password" placeholder="password">
+        <input class="border-2 rounded-full block mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full" type="submit" value="Create New Account">
+        <p class=" text-white font-semibold  mt-7 w-3/4 mx-auto text-center">
+          By continuing , you agree to pinterest Terms of service.
+           Open a new tab and acknowledge that 
+           you've read our privacy policy.
+        
+        </p>
+      </form> 
+      <a class="inline-block mt-7 text-sm font-semibold text-white text-center w-full" href="/">Login Existing account</a>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>
